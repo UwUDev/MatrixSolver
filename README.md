@@ -1,7 +1,7 @@
 # Matrix solver  
 Just a project school, don't pay attention...  
 Average time with my trash computer: 8900µs.  
-you souldget output like this (colored)  
+you should get output like this (colored)  
 ```
 ===================
 T C H A L U T I E R 
