@@ -21,4 +21,26 @@ Word should be: Trimaran
 ```  
 ## How to start ?  
 Just run the class in the test package.  
-### You can set debug to see the step by step solving.
+### You can set debug to see the step by step solving.  
+## What if there is an error ?  
+You should get something like that:  
+```
+===================
+T C H A L U T I E R 
+E R A D E A U R J P 
+U C A N O T R V O A 
+G K M E R A E O N Q 
+O A I M M A A I Q U 
+R Y R E A N U L U E 
+I A O G R A C E E X 
+P K E L O D N O G O 
+R E I L O R T E P T 
+===================
+Took: 7389µs.
+
+!!!   Uh oh... Some words are note found :/   !!!   
+Words not found: 
+- PAQUEBOT
+
+Remaining letters: T R P A Q I M A U R A N E X O T 
+```
