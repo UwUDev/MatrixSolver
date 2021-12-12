@@ -46,33 +46,28 @@ public class MatrixManager {
 
     public String getStringFromLine(int lineIndex, int from, int to){
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < (to + 1 - from); i++) {
+        for (int i = 0; i < (to + 1 - from); i++)
             sb.append(getCharacter(from + i, lineIndex).getCharacter());
-        }
         return sb.toString();
     }
 
     public String getColoredStringFromColumn(int columnIndex, int from, int to){
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < (to - from); i++) {
+        for (int i = 0; i < (to - from); i++)
             sb.append(getCharacter(columnIndex, from + i).getColoredCharacter());
-        }
         return sb.toString();
     }
 
     public String getColoredStringFromLine(int lineIndex, int from, int to){
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < (to + 1 - from); i++) {
+        for (int i = 0; i < (to + 1 - from); i++)
             sb.append(getCharacter(from + i, lineIndex).getColoredCharacter());
-        }
         return sb.toString();
     }
 
     private void matrixToRaw() {
         rawMatrix.clear();
-        for (List<MatrixChar> matrixChars : matrix) {
-            rawMatrix.addAll(matrixChars);
-        }
+        matrix.forEach(rawMatrix::addAll);
     }
 
     public List<List<MatrixChar>> getSlashedRows(){
@@ -146,10 +141,6 @@ public class MatrixManager {
 
     public void validate(List<MatrixChar> matrixChars){
         matrixChars.forEach(MatrixChar::validate);
-    }
-
-    public void validate(MatrixChar matrixChar){
-        matrixChar.validate();
     }
 
     public List<MatrixChar> getUnvalidatedColoredString() {

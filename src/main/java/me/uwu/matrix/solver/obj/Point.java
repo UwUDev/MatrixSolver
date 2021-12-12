@@ -9,6 +9,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @AllArgsConstructor
+//lombok = cool
 public class Point {
     private int x, y;
 }

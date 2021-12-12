@@ -66,10 +66,10 @@ public class MatrixSolver {
     private void solveLines(boolean debug){
         List<String> toRemove = new ArrayList<>();
         for (String word : words) {
+            //Ouaishe ca marche pas il a remis le mot ce chacal
             //System.out.println(word);
-            //clearScreen();
-
             //printMatrix();
+
             boolean exit = false;
             for (int lineIndex = 1; lineIndex <= matrixSizeY; lineIndex++) {
                 if (exit) break;
@@ -130,6 +130,7 @@ public class MatrixSolver {
         for (String word : words) {
             boolean exit = false;
             for (List<MatrixChar> slashedRow : manager.getSlashedRows()) {
+                //noinspection DuplicatedCode
                 if (exit) break;
                 StringBuilder sb = new StringBuilder();
                 for (MatrixChar matrixChar : slashedRow) {
@@ -166,6 +167,7 @@ public class MatrixSolver {
         for (String word : words) {
             boolean exit = false;
             for (List<MatrixChar> slashedRow : manager.getBackSlashedRows()) {
+                //noinspection DuplicatedCode
                 if (exit) break;
                 StringBuilder sb = new StringBuilder();
                 for (MatrixChar matrixChar : slashedRow) {
@@ -214,10 +216,6 @@ public class MatrixSolver {
         }
         System.out.println(sbDivider);
         System.out.flush();
-    }
-
-    public void clearScreen() {
-        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
     public String invertWord(String word){

@@ -1,6 +1,5 @@
 package me.uwu.matrix.solver;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import me.uwu.matrix.solver.utils.MatrixColor;
 
@@ -17,7 +16,7 @@ public class MatrixChar {
     }
 
     public String getColor(){
-        if (solved == true)
+        if (solved)
             return MatrixColor.VALIDATED.getColor();
         return MatrixColor.NOT_VALIDATED.getColor();
     }

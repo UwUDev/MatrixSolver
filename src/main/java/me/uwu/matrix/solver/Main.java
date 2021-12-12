@@ -18,7 +18,7 @@ public class Main {
                 validFile = true;
             else System.out.print("\u001B[31mCannot find matrix file.\n");
         }
-        System.out.print("Debug mode ? (y/n)");
+        System.out.print("Debug mode ? (y/n): ");
 
         final String tempData = sc.nextLine();
         boolean debug = tempData.equalsIgnoreCase("y") ||
